@@ -1,28 +1,28 @@
-Intermediate Level Queries
+--Intermediate Level Queries
 
-Focus: Grouped analysis and business-style metrics
+--Focus: Grouped analysis and business-style metrics
 
-Examples:
+--Examples:
 
-Patients per city
+--Patients per city
 
-Average fever by gender
+--Average fever by gender
 
-COVID-positive cases per city
+--COVID-positive cases per city
 
-COVID positivity percentage
+--COVID positivity percentage
 
-Grouping with HAVING
+--Grouping with HAVING
 
-Skills demonstrated:
+--Skills demonstrated:
 
-GROUP BY
+--GROUP BY
 
-Conditional counting
+--Conditional counting
 
-Percent calculations
+--Percent calculations
 
-Multi-column aggregations
+--Multi-column aggregations
 
 -- Count the number of patients per city.
 SELECT City, COUNT(*) AS total_patients
