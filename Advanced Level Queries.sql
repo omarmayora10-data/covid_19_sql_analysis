@@ -1,34 +1,34 @@
-Advanced Level Queries
+--Advanced Level Queries
 
-Focus: Analytical SQL and real-world insights
+--Focus: Analytical SQL and real-world insights
 
-Examples:
+--Examples:
 
-Ranking patients by fever within cities
+--Ranking patients by fever within cities
 
-City with highest COVID positivity rate
+--City with highest COVID positivity rate
 
-Age-group risk analysis
+--Age-group risk analysis
 
-Running totals of COVID-positive cases
+--Running totals of COVID-positive cases
 
-Fever severity classification using CASE
+--Fever severity classification using CASE
 
-Duplicate record detection
+--Duplicate record detection
 
-Skills demonstrated:
+--Skills demonstrated:
 
-Window functions (RANK, COUNT OVER)
+--Window functions (RANK, COUNT OVER)
 
-Common Table Expressions (CTEs)
+--Common Table Expressions (CTEs)
 
-Advanced filtering
+--Advanced filtering
 
 Analytical reasoning
 --Rank patients by fever temperature within each city.
---SELECT City, Age, Gender, Fever,
---RANK() OVER(PARTITION BY City ORDER BY Fever DESC)
---FROM covid_19;
+SELECT City, Age, Gender, Fever,
+RANK() OVER(PARTITION BY City ORDER BY Fever DESC)
+FROM covid_19;
 
 --Identify the city with the highest COVID positivity rate.
 SELECT TOP 1 City,
