@@ -1,31 +1,31 @@
-Beginner Level Queries
+--Beginner Level Queries
 
-Focus: Basic SELECT statements, filtering, and simple aggregations
+--Focus: Basic SELECT statements, filtering, and simple aggregations
 
-Examples:
+--Examples:
 
-Retrieve all patient records
+--Retrieve all patient records
 
-Count total patients
+--Count total patients
 
-Filter COVID-positive cases
+--Filter COVID-positive cases
 
-Find patients by city or gender
+--Find patients by city or gender
 
-Basic WHERE, COUNT, and DISTINCT usage
+--Basic WHERE, COUNT, and DISTINCT usage
 
-Skills demonstrated:
+--Skills demonstrated:
 
-Data exploration
+--Data exploration
 
-Filtering
+--Filtering
 
-Simple aggregations
+--Simple aggregations
 
 
 -- Retrieving all the records from covid_19 table
---SELECT *
---FROM covid_19;
+SELECT *
+FROM covid_19;
 
 -- Count the total number of patients in the dataset.
 SELECT COUNT(*) AS Total_rows
@@ -54,31 +54,31 @@ SELECT MIN(Age) AS youngest_age,
 FROM covid_19;
 
 --List patients whose age is below 18.
---SELECT *
---FROM covid_19
---WHERE Age < 18;
+SELECT *
+FROM covid_19
+WHERE Age < 18;
 
 -- Show all patients who tested positive for COVID-19
---SELECT *
---FROM covid_19
---WHERE Has_Covid = 'Yes'
+SELECT *
+FROM covid_19
+WHERE Has_Covid = 'Yes'
 
 -- Retrieve patients whose fever is greater than 101°F.
---SELECT *
---FROM covid_19
---WHERE Fever > 101
+SELECT *
+FROM covid_19
+WHERE Fever > 101
 
 --Find all female patients from Delhi.
---SELECT *
---FROM covid_19
---WHERE Gender = 'Female' AND City = 'Delhi';
+SELECT *
+FROM covid_19
+WHERE Gender = 'Female' AND City = 'Delhi';
 
 --Display patients who have a Strong cough.
---SELECT *
---FROM covid_19
---WHERE Cough = 'Strong';
+SELECT *
+FROM covid_19
+WHERE Cough = 'Strong';
 
 -- Retrieve all patients from Mumbai with a fever above 100°F.
---SELECT *
---FROM covid_19
---WHERE FEVER < 100;
+SELECT *
+FROM covid_19
+WHERE FEVER < 100;
