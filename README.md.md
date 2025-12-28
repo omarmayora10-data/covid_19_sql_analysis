@@ -107,4 +107,35 @@ covid-sql-analysis/
 └── README.md
 
 
+**Looker Studio Dashboard**
+
+
+
+\*\*Live Dashboard:\*\* 
+
+https://lookerstudio.google.com/s/vAxUvfvvzdg
+
+
+
+**Overview**
+
+An interactive dashboard built in Looker Studio to visualize COVID-19 trends by city, age group, fever severity, and symptoms. The dashboard enables dynamic filtering and highlights high-risk regions and demographics.
+
+
+
+**Key Features**
+
+\- COVID positivity rate by city
+
+\- Fever severity vs COVID status
+
+\- Age group risk analysis
+
+\- City-level risk summary table
+
+
+
+**Screenshots**
+
+!\[Dashboard](dashboard/dashboard\_overview.png)
 
